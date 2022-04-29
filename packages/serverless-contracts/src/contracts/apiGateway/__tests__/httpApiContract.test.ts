@@ -72,6 +72,7 @@ describe('httpApiContract', () => {
     });
 
     it('should have the correct inputSchema', () => {
+      const i = httpApiContract.inputSchema;
       expect(httpApiContract.inputSchema).toEqual({
         type: 'object',
         properties: {
